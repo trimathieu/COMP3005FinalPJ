@@ -1,0 +1,105 @@
+<html>
+	<head>
+		<title>Order Form</title>
+		<style>
+			.column {
+				float: left;
+			}
+
+			.left{
+				width: 10%;
+			}
+			
+			.right {
+				width: 25%;
+			}
+
+			.middle {
+				width: 65%;
+			}
+		</style>
+		<style>
+		  .topnav 
+		  	a {
+			  float: left; 
+			  color: #f2f2f2; 
+			  text-align: center; 
+			  padding: 14px;
+			  text-decoration: none;
+			  font-size: 17px;
+		  	} 
+		</style>
+		<style>
+			.topnav
+			  a:hover {
+				  background-color: #ddd;
+				  color: black;
+		  	}
+		</style>
+		<style>
+		  table {
+			  border-collapse: collapse;
+			  width: 100%;
+		  }
+		</style>
+		<style>
+		  tr {
+			  border-bottom: 1px solid #ddd;
+		  }
+		</style>
+		<style>
+		  .topnav
+			  .login-container {
+				  float: right;
+			  }
+		</style>
+		<style>
+		  .topnav  
+		  input[type=text] {
+			  padding: 6px;
+			  margin-top: 8px;
+			  font-size: 17px;
+			  border: none;
+			  width:120px;
+		  }
+		</style>
+		<style>
+		  .topnav .login-container button {
+			  float: right;
+			  padding: 6px 10px;
+			  margin-top: 8px;
+			  margin-right: 16px;
+			  background-color: #555;
+			  color: white;
+			  font-size: 17px;
+			  border: none;
+			  cursor: pointer;
+		  }
+		</style>
+		<style>
+		  .topnav .login-container button:hover {
+			  background-color: green;
+		  }
+		</style>
+	  </head>
+	  <body onload="init()">
+		<div class="topnav" id="nav" style="overflow: hidden; background-color: #333;">
+			<a href="/">Home </a>
+			<a href="/users">Users </a>
+			<a href="/registration">Registration</a>
+		</div>	
+		<div>		
+			<select id="restaurant-select"></select>
+			<br><br>
+		</div>
+		<div id="info"></div>
+		<div id="main">
+			<div class="column left" id="left"></div>
+			<div class="column middle" id="middle"></div>
+			<div class="column right" id="right"></div>
+		</div>
+
+		<script src="orderform.js"></script>
+	</body>
+
+</html>
